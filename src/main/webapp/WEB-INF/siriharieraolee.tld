@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+<description>Tags for Practice</description>
+<tlib-version>2.1</tlib-version>
+<short-name>mtag</short-name>
+<uri>eratags</uri>
+<tag>
+	<name>formatDate</name>
+	<tag-class>com.bub.sho.tags.DateFormatterTag</tag-class>
+	<body-content>empty</body-content>
+	<attribute>
+	<name>format</name>
+	<required>true</required>
+	</attribute>
+	<attribute>
+	<name>date</name>
+	<required>true</required>
+	<rtexprvalue>true</rtexprvalue>
+	<type>java.util.Date</type>
+	</attribute>
+</tag>
+<tag>
+	<name>formatTS</name>
+	<tag-class>com.bub.sho.tags.TSFormatter</tag-class>
+	<body-content>empty</body-content>
+	<attribute>
+	<name>value</name>
+	<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+</taglib>
